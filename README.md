@@ -1,2 +1,2 @@
-# c-sharp_chess-game
-Chess console-based game created with C#
+# Chess Game - Console based
+Game under development with C# and VS Studio
