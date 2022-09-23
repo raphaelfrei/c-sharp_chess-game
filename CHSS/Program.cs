@@ -24,7 +24,7 @@ namespace CHSS {
         static readonly string queen = "Q";
         static readonly string king = "K";
         static readonly string empty = "  ";
-        static public string? color;
+        static string? color;
 
         // Game Settings
         static bool endOfGame = false;
@@ -85,6 +85,7 @@ namespace CHSS {
 
             string curPiece = GetPiece(curPosX - 1, curPosY - 1);
 
+            // If piece is Black or Empty, cannot select - Choose piece to move
             if (curPiece.StartsWith("B") || curPiece.StartsWith(" ")) {
                 Console.Clear();
                 PrintBoard();
@@ -139,6 +140,7 @@ namespace CHSS {
 
             string curPiece = GetPiece(curPosX - 1, curPosY - 1);
 
+            // If piece is White or Empty, cannot select - Choose piece to move
             if (curPiece.StartsWith("W") || curPiece.StartsWith(" ")) {
                 Console.Clear();
                 PrintBoard();
